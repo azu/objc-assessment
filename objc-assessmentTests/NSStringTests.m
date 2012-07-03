@@ -5,7 +5,7 @@
 //  Created by azu on 07/02/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-// http://www.pwv.co.jp/~take/TakeWiki/index.php?iPhone%2F%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E5%9E%8B%E9%96%8B%E7%99%BA%E3%81%AE%E6%BA%96%E5%82%99t
+// http://www.pwv.co.jp/~take/TakeWiki/index.php?iPhone%2F%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E5%9E%8B%E9%96%8B%E7%99%BA%E3%81%AE%E6%BA%96%E5%82%99
 // http://saturnboy.com/2011/08/intro-to-ochamcrest/
 #import "NSStringTests.h"
 
