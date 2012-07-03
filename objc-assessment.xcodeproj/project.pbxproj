@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		735458DA15A2058F000D6787 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735458D915A2058F000D6787 /* OCHamcrestIOS.framework */; };
 		9A06130554F628CA509CAD7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD79 /* UIKit.framework */; };
 		9A06130554F628CA509CAD7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD7B /* Foundation.framework */; };
 		9A06130554F628CA509CAD7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD7D /* CoreGraphics.framework */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		735458D915A2058F000D6787 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		9A06130554F628CA509CAD70 /* objc-assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A06130554F628CA509CAD79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A06130554F628CA509CAD7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +69,7 @@
 				9A06130554F628CA509CAD95 /* SenTestingKit.framework in Frameworks */,
 				9A06130554F628CA509CAD96 /* UIKit.framework in Frameworks */,
 				9A06130554F628CA509CAD97 /* Foundation.framework in Frameworks */,
+				735458DA15A2058F000D6787 /* OCHamcrestIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +98,7 @@
 		9A06130554F628CA509CAD78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				735458D915A2058F000D6787 /* OCHamcrestIOS.framework */,
 				9A06130554F628CA509CAD94 /* SenTestingKit.framework */,
 				9A06130554F628CA509CAD7D /* CoreGraphics.framework */,
 				9A06130554F628CA509CAD7B /* Foundation.framework */,
@@ -362,6 +366,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "objc-assessment/objc-assessment-Prefix.pch";
@@ -379,6 +384,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "objc-assessment/objc-assessment-Prefix.pch";
@@ -408,6 +414,7 @@
 				9A06130554F628CA509CAD74 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A06130554F628CA509CAD8D /* Build configuration list for PBXNativeTarget "objc-assessmentTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +423,7 @@
 				9A06130554F628CA509CAD8F /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
