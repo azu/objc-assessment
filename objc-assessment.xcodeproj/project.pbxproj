@@ -19,6 +19,7 @@
 		9A06130554F628CA509CAD97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD7B /* Foundation.framework */; };
 		9A06130554F628CA509CAD9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD9E /* InfoPlist.strings */; };
 		9A06130554F628CA509CADA5 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CADA4 /* NSStringTests.m */; };
+		9A06130554F628CA509CADA8 /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CADA7 /* NSArrayTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		9A06130554F628CA509CAD9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A06130554F628CA509CADA3 /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		9A06130554F628CA509CADA4 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
+		9A06130554F628CA509CADA6 /* NSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayTests.h; sourceTree = "<group>"; };
+		9A06130554F628CA509CADA7 /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 		9A06130554F628CA509CAD9A /* objc-assessmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				9A06130554F628CA509CADA7 /* NSArrayTests.m */,
+				9A06130554F628CA509CADA6 /* NSArrayTests.h */,
 				9A06130554F628CA509CADA4 /* NSStringTests.m */,
 				9A06130554F628CA509CADA3 /* NSStringTests.h */,
 				9A06130554F628CA509CAD9B /* Supporting Files */,
@@ -259,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A06130554F628CA509CADA5 /* NSStringTests.m in Sources */,
+				9A06130554F628CA509CADA8 /* NSArrayTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

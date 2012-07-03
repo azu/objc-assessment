@@ -32,8 +32,9 @@
 // 空文字列の作り方
 - (void)testEmptyString {
     NSString *string /*= HERE*/;
-    STAssertNotNil(string, @"nilではない");
-    STAssertEquals([string length], 0U, @"空の文字列");
+    assertThat(string, notNilValue());// nilではない
+    assertThat(string, instanceOf([NSString class]));// NSStringクラスのインスタンス
+    assertThatInteger([string length], equalToInteger(0));
 }
 
 // 文字列の追加
