@@ -20,6 +20,7 @@
 		9A06130554F628CA509CAD9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD9E /* InfoPlist.strings */; };
 		9A06130554F628CA509CADA5 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CADA4 /* NSStringTests.m */; };
 		9A06130554F628CA509CADA8 /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CADA7 /* NSArrayTests.m */; };
+		9A06130554F628CA509CADAB /* NSDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CADAA /* NSDictionaryTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		9A06130554F628CA509CADA4 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		9A06130554F628CA509CADA6 /* NSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayTests.h; sourceTree = "<group>"; };
 		9A06130554F628CA509CADA7 /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
+		9A06130554F628CA509CADA9 /* NSDictionaryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryTests.h; sourceTree = "<group>"; };
+		9A06130554F628CA509CADAA /* NSDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 		9A06130554F628CA509CAD9A /* objc-assessmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				9A06130554F628CA509CADAA /* NSDictionaryTests.m */,
+				9A06130554F628CA509CADA9 /* NSDictionaryTests.h */,
 				9A06130554F628CA509CADA7 /* NSArrayTests.m */,
 				9A06130554F628CA509CADA6 /* NSArrayTests.h */,
 				9A06130554F628CA509CADA4 /* NSStringTests.m */,
@@ -265,6 +270,7 @@
 			files = (
 				9A06130554F628CA509CADA5 /* NSStringTests.m in Sources */,
 				9A06130554F628CA509CADA8 /* NSArrayTests.m in Sources */,
+				9A06130554F628CA509CADAB /* NSDictionaryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

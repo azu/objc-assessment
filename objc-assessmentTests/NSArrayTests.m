@@ -6,11 +6,10 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "NSArrayTests.h"
-
 #define HC_SHORTHAND
 
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
+#import "NSArrayTests.h"
 
 @implementation NSArrayTests
 
@@ -18,8 +17,10 @@
 - (void)testArrayEmpty {
     NSArray *array /*= HERE*/;
     assertThat(array, notNilValue());// nilではなく
-    assertThat(array, is(empty()));// 空の配列で
-    assertThat(array, hasCountOf(0));// 要素数は0個
+    if (array != nil){
+        assertThat(array, instanceOf([NSArray array]));//NSArrayのインスタンス
+        assertThat(array, is(empty()));// 要素数が0の空の配列
+    }
 }
 
 // 要素を持つ配列の初期化
