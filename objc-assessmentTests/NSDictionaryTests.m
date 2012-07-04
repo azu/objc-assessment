@@ -57,7 +57,7 @@
                                                                @"val2", @"key2",
                                                                @"val3", @"key3",
                                                                nil];
-    /* HERE  全部を削除する */
+    /* HERE */
     assertThat(dictionary, notNilValue());
     if (dictionary != nil){
         assertThat(dictionary, instanceOf([NSDictionary class]));
