@@ -41,7 +41,7 @@
 
 // propertyに値を追加する
 - (void)testPropertyValue {
-    // self.myArrayは@"foo"という値を返す
+    // self.myArrayは@"foo"を値に持ってる
     if ([self respondsToSelector:@selector(myArray)]){
         assertThat([self performSelector:@selector(myArray)], hasItem(@"foo"));
         assertThat([self valueForKey:@"_myArray"], hasItem(@"foo"));// インスタンス変数の方にも
