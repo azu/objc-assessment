@@ -18,7 +18,7 @@
     NSArray *array /*= HERE*/;
     assertThat(array, notNilValue());// nilではなく
     if (array != nil){
-        assertThat(array, instanceOf([NSArray array]));//NSArrayのインスタンス
+        assertThat(array, instanceOf([NSArray class]));//NSArrayのインスタンス
         assertThat(array, is(empty()));// 要素数が0の空の配列
     }
 }
