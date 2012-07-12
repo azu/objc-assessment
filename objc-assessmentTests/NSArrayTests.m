@@ -6,9 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#define HC_SHORTHAND
 
-#import <OCHamcrestIOS/OCHamcrestIOS.h>
 #import "NSArrayTests.h"
 
 @implementation NSArrayTests

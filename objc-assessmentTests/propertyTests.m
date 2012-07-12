@@ -9,10 +9,6 @@
 #import "propertyTests.h"
 #import "objc/runtime.h"
 
-#define HC_SHORTHAND
-
-#import <OCHamcrestIOS/OCHamcrestIOS.h>
-
 @implementation propertyTests {
 }
 
