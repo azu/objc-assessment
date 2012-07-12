@@ -20,7 +20,7 @@
 // 文字列の長さ
 - (void)testStringLength {
     NSString *string = @"STRING";
-    NSUInteger stringLength /*= HERE*/;
+    NSUInteger stringLength/*= HERE*/;
     assertThatInteger(stringLength, equalToInteger(6));
 }
 

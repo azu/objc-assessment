@@ -71,7 +71,7 @@
                                                               @"val2", @"key2",
                                                               nil];
     /* HERE */
-    assertThat(dictionary, hasEntries(@"key1", @"val1", @"key2", @"val2"));
+    assertThat(dictionary, hasEntries(@"key1", @"val1", @"key2", @"val2", nil));
     /*
     dictionary = {
         key1 = val1;
