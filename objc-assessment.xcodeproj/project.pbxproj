@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17B5C2D20D6DDA0F832F6244 /* propertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC6103EC970D4C4450E5 /* propertyTests.m */; };
+		17B5CDF567479578C3A46983 /* NSSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD60B112697528A62BD6 /* NSSetTests.m */; };
 		735458DA15A2058F000D6787 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735458D915A2058F000D6787 /* OCHamcrestIOS.framework */; };
 		9A06130554F628CA509CAD95 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD94 /* SenTestingKit.framework */; };
 		9A06130554F628CA509CAD96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD79 /* UIKit.framework */; };
@@ -22,6 +23,8 @@
 		17B5C11E24576F6C5D2F3666 /* propertyTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = propertyTests.h; sourceTree = "<group>"; };
 		17B5C51FFB1A1B754C838937 /* objc-assessment-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-assessment-Prefix.pch"; sourceTree = "<group>"; };
 		17B5CC6103EC970D4C4450E5 /* propertyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = propertyTests.m; sourceTree = "<group>"; };
+		17B5CC7AE95EE92E1C97AD9C /* NSSetTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSetTests.h; sourceTree = "<group>"; };
+		17B5CD60B112697528A62BD6 /* NSSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetTests.m; sourceTree = "<group>"; };
 		735458D915A2058F000D6787 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		9A06130554F628CA509CAD79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A06130554F628CA509CAD7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +88,8 @@
 		9A06130554F628CA509CAD9A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				17B5CD60B112697528A62BD6 /* NSSetTests.m */,
+				17B5CC7AE95EE92E1C97AD9C /* NSSetTests.h */,
 				17B5CC6103EC970D4C4450E5 /* propertyTests.m */,
 				17B5C11E24576F6C5D2F3666 /* propertyTests.h */,
 				9A06130554F628CA509CADAA /* NSDictionaryTests.m */,
@@ -188,6 +193,7 @@
 				9A06130554F628CA509CADA8 /* NSArrayTests.m in Sources */,
 				9A06130554F628CA509CADAB /* NSDictionaryTests.m in Sources */,
 				17B5C2D20D6DDA0F832F6244 /* propertyTests.m in Sources */,
+				17B5CDF567479578C3A46983 /* NSSetTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
