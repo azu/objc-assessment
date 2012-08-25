@@ -73,9 +73,18 @@
 
 // 文字列の置換
 - (void)testReplaceString {
-    NSString *string = @"NO TEST, NO DOC";
-    NSString *replacedString /*TODO: "NO"を"YES"に置換する*/;
-    assertThat(replacedString, equalTo(@"YES TEST, YES DOC"));
+    NSMutableString *string = [NSMutableString stringWithString:@"NO TEST, NO DOC"];
+    /*TODO: "NO"を"YES"に置換する*/;
+    assertThat(string, equalTo(@"YES TEST, YES DOC"));
+}
+
+// 文字列を数値に変換する
+- (void)testConvertStringToNumber {
+    NSString *string = @"10.0";
+    NSInteger integer /*TODO: stringからNSIntegerにする*/;
+    assertThatInteger(integer, equalToInteger(10));
+    CGFloat cgFloat /*TODO: stringからfloatにする*/;
+    assertThatFloat(cgFloat, equalToFloat(10.0));
 }
 
 @end
