@@ -11,7 +11,7 @@
 @implementation NSSetTests
 
 - (void)testNSSetEmpty {
-    NSSet *set /*= HERE*/;
+    NSSet *set /*TODO: 空のNSSetを作成*/;
     assertThat(set, notNilValue());// nilではなく
     if (set != nil){
         assertThat(set, instanceOf([NSSet class]));//NSSetのインスタンス
@@ -21,21 +21,21 @@
 
 // @"item"を持つNSSetを作成
 - (void)testNSSetInit {
-    NSSet *set /*= HERE*/;
+    NSSet *set /*TODO: "item"を持つNSSetを作成*/;
     assertThat(set, hasItem(@"item"));
 }
 
 // 配列からNSSetを作成
 - (void)testNSSetInitWithArray {
     NSArray *array = [NSArray arrayWithObjects:@"foo", @"bar", nil];
-    NSSet *set /*= HERE*/;
+    NSSet *set /*TODO: 配列からNSSetを作成*/;
     assertThat(set, hasItems(@"foo", @"bar", nil));
 }
 
 // NSSetから配列を作成
 - (void)testArrayFromNSSet {
     NSSet *set = [NSSet setWithObjects:@"foo", @"bar", nil];
-    NSArray *array /*= HERE*/;
+    NSArray *array /*TODO: NSSetから配列を作成*/;
     assertThat(array, hasItems(@"foo", @"bar", nil));
 }
 
@@ -44,7 +44,7 @@
     NSArray *array = [NSArray arrayWithObjects:@"foo", @"foo", @"bar", nil];
     NSSet *set = [NSSet setWithArray:array];
     // NSArray -> NSSet とした時に set に入ってる中身と同じsetを作る
-    NSSet *expectedSet = [NSSet setWithObjects:/*HERE*/nil];
+    NSSet *expectedSet = [NSSet setWithObjects:/*TODO: setと同じ要素を持つNSSetを作成*/ nil];
     assertThat(set, equalTo(expectedSet));
     assertThat(set, hasCountOf([expectedSet count]));
 }
@@ -54,7 +54,7 @@
     NSSet *worldA = [NSSet setWithObjects:@"nihon", @"US", nil];
     NSSet *worldB = [NSSet setWithObjects:@"nihon", @"Canada", nil];
     NSMutableSet *worlds = [NSMutableSet set];
-    /* HERE */
+    /*TODO: worldsはAとBの和集合*/
     assertThat(worlds, hasItems(@"nihon", @"US", @"Canada", nil));
     assertThat(worlds, hasCountOf(3));
 }
@@ -64,17 +64,18 @@
     NSSet *worldA = [NSSet setWithObjects:@"nihon", @"US", nil];
     NSSet *worldB = [NSSet setWithObjects:@"nihon", @"Canada", nil];
     NSMutableSet *worlds = [NSMutableSet setWithSet:worldA];
-    /*HERE*/
+    /*TODO: worldsはAとBの積集合*/
     assertThat(worlds, hasItem(@"nihon"));
     assertThat(worlds, hasCountOf(1));
 
 }
+
 // 差集合：集合から別の集合に含まれる要素を全て取り除く
 - (void)testNSSetMinus {
     NSSet *worldA = [NSSet setWithObjects:@"nihon", @"US", nil];
     NSSet *worldB = [NSSet setWithObjects:@"nihon", @"Canada", nil];
     NSMutableSet *worlds = [NSMutableSet setWithSet:worldA];
-    /*HERE*/
+    /*TODO: worldsはAとBの積集合*/
     assertThat(worlds, hasItem(@"US"));
     assertThat(worlds, hasCountOf(1));
 }

@@ -10,6 +10,6 @@
 
 @interface propertyTests : SenTestCase
 
-/*HERE*/
+/*TODO: @property myArrayを宣言する*/
 
 @end
