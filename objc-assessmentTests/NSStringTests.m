@@ -34,11 +34,20 @@
 
 // 文字列の追加
 - (void)testAppendString {
-    NSString *combinedString = nil;
-    NSString *stringA = @"This is ";
-    NSString *stringB = @"a Pen.";
-    /*TODO: AにBを追加する*/
-    assertThat(combinedString, equalTo(@"This is a Pen."));
+    NSMutableString *string = [NSMutableString string];
+    [string setString:@"This is "];
+    NSString *pen = @"a Pen.";
+    /*TODO: stringにpenを追加する*/
+    assertThat(string, equalTo(@"This is a Pen."));
+}
+
+// 文字列の挿入
+- (void)testInsertString {
+    NSMutableString *numberString = [NSMutableString string];
+    [numberString setString:@"0123789"];
+    NSString *stringB = @"456";
+    /*TODO: numberStringの4番目にBを挿入する*/
+    assertThat(numberString, equalTo(@"0123456789"));
 }
 
 // 文字列の組み合わせ
