@@ -73,7 +73,7 @@
 
 // 文字列の置換
 - (void)testReplaceString {
-    NSMutableString *string = [NSMutableString stringWithString:@"NO TEST, NO DOC"];
+    NSString *string = @"NO TEST, NO DOC";
     /*TODO: "NO"を"YES"に置換する*/;
     assertThat(string, equalTo(@"YES TEST, YES DOC"));
 }
