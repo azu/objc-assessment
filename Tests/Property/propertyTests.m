@@ -10,14 +10,12 @@
 #import "objc/runtime.h"
 
 @implementation PropertyTests {
-    /*TODO: _myArray というインスタンス変数を作成*/
 }
 
-/*TODO: @synthesize を書く*/
 
 - (void)setUp {
     [super setUp];
-    /*TODO: プロパティに"foo"を追加する */
+    self.myArray = @[@"foo"];
 }
 
 

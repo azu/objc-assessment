@@ -9,7 +9,5 @@
 #import <SenTestingKit/SenTestingKit.h>
 
 @interface PropertyTests : SenTestCase
-
-/*TODO: @property myArrayを宣言する*/
-
+@property(nonatomic, strong) NSArray *myArray;
 @end
