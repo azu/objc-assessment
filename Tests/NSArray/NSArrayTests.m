@@ -13,9 +13,9 @@
 
 // 空の配列
 - (void)testArrayEmpty {
-    NSArray *array /*TODO: 空の配列を代入 */;
+    NSArray *array = [NSArray array];
     assertThat(array, notNilValue());// nilではなく
-    if (array != nil){
+    if (array != nil) {
         assertThat(array, instanceOf([NSArray class]));//NSArrayのインスタンス
         assertThat(array, is(empty()));// 要素数が0の空の配列
     }
@@ -23,7 +23,7 @@
 
 // 要素を持つ配列の初期化
 - (void)testArrayWithInit {
-    NSArray *array = [NSArray arrayWithObjects:/*TODO: 3つの要素を作る*/ nil];
+    NSArray *array = [NSArray arrayWithObjects:@"a", @"b", @"c", nil];
     assertThat(array, hasCountOf(3));// [array count] == 3
 }
 
@@ -31,7 +31,7 @@
 - (void)testMutableArrayAddObject {
     NSMutableArray *array = [NSMutableArray array];// require init
     [array addObject:@"object"];// *1
-    /*TODO: "item"を追加する*/
+    [array addObject:@"item"];
     assertThat(array, hasItem(@"item"));// item という文字列の要素を持っている
     assertThat(array, hasItem(@"object"));// *1 always pass
     assertThat([array lastObject], equalTo(@"item"));// 配列の最後の要素は item
@@ -41,28 +41,27 @@
 - (void)testMutableArrayRemoveObject {
     NSMutableArray *array = [NSMutableArray array];// require init
     [array addObject:@"object"];
-    /*TODO: "object"を取り除く*/
+    [array removeObject:@"object"];
     assertThat(array, isNot(hasItem(@"object")));// object という文字列の要素を持ってない
 }
 
 //  MutableArrayの任意の位置に要素を追加する
 - (void)testMutableArrayInsertFirst {
     NSMutableArray *array = [NSMutableArray arrayWithObjects:@"a", @"b", @"c", nil];
-    /*TODO: 先頭に"XXX"を追加する */
+    [array insertObject:@"XXX" atIndex:0];
     assertThat(array, contains(@"XXX", @"a", @"b", @"c", nil));// XXX ,a , b, c という順に要素が並んでる
 }
 
 // 配列を区切り文字で結合
 - (void)testArrayJoin {
     NSArray *array = @[@"a", @"b", @"c"];
-    NSString *joinedArray /*TODO: ","を区切り文字で結合する*/;
+    NSString *joinedArray = [array componentsJoinedByString:@","];
     assertThat(joinedArray, equalTo(@"a,b,c"));
 }
 
 // 配列に数字をオブジェクトとして入れる
 - (void)testArrayWithNSNumber {
-    NSArray *array /*TODO: NSNumberで数値を配列に入れる*/;
-
+    NSArray *array = @[@(10)];
     NSNumber *objectAtFirst = array[0];// 配列の0番目の要素は
     assertThat(objectAtFirst, instanceOf([NSNumber class]));// NSNumberオブジェクトで
     assertThatInteger([objectAtFirst integerValue], equalToInteger(10));// 10という数字を持つ
@@ -75,24 +74,27 @@
         @2,
         @3
     ];
-    NSInteger total = 0;
-    /*TODO: totalに配列の数値を合計する*/
+    __block NSInteger total = 0;
+    [array enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *stop) {
+        total += [number integerValue];
+    }];
     assertThatInteger(total, equalToInteger(6));
 }
 
 // ソート関数
 NSComparisonResult compareInteger(id value1, id value2, void *context) {
-    NSInteger integerValue1 = [(NSNumber *) value1 integerValue];
-    NSInteger integerValue2 = [(NSNumber *) value2 integerValue];
+    NSInteger integerValue1 = [(NSNumber *)value1 integerValue];
+    NSInteger integerValue2 = [(NSNumber *)value2 integerValue];
 
-    if (integerValue1 > integerValue2){
+    if (integerValue1 > integerValue2) {
         return NSOrderedDescending;
-    } else if (integerValue1 < integerValue2){
+    } else if (integerValue1 < integerValue2) {
         return NSOrderedAscending;
     } else {
         return NSOrderedSame;
     }
 }
+
 // 配列を数字昇順にソートする
 - (void)testArraySort {
     NSArray *array = @[
@@ -100,7 +102,7 @@ NSComparisonResult compareInteger(id value1, id value2, void *context) {
         @3,
         @1
     ];
-    /*TODO: ソート関数compareIntegerを使って配列をソートする*/
+    array = [array sortedArrayUsingFunction:compareInteger context:nil];
     assertThat(array, contains(equalToInteger(1), equalToInteger(2), equalToInteger(3), nil));
 }
 
