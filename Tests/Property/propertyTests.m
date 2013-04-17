@@ -1,15 +1,15 @@
 //
-//  propertyTests.m
+//  PropertyTests.m
 //  objc-assessment
 //
 //  Created by azu on 07/08/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "propertyTests.h"
+#import "PropertyTests.h"
 #import "objc/runtime.h"
 
-@implementation propertyTests {
+@implementation PropertyTests {
     /*TODO: _myArray というインスタンス変数を作成*/
 }
 

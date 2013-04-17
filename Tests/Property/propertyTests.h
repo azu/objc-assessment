@@ -1,5 +1,5 @@
 //
-//  propertyTests.h
+//  PropertyTests.h
 //  objc-assessment
 //
 //  Created by azu on 07/08/12.
@@ -8,7 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface propertyTests : SenTestCase
+@interface PropertyTests : SenTestCase
 
 /*TODO: @property myArrayを宣言する*/
 

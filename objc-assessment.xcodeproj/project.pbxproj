@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17B5C24F0DD039C7E6674DEF /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C003F6CEE2FBC2D431ED /* NSStringTests.m */; };
-		17B5C412CD942E78D7A2601F /* propertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C065029ED1C3FC0D43D3 /* propertyTests.m */; };
+		17B5C412CD942E78D7A2601F /* PropertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C065029ED1C3FC0D43D3 /* PropertyTests.m */; };
 		17B5C8D89C9D107E325C923B /* NSDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9924C88DC5803C4D5EE /* NSDictionaryTests.m */; };
 		17B5CA0F79EEB67AA69F105E /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5C37025766055D806E3 /* NSArrayTests.m */; };
 		17B5CAA0604B6725F24E6764 /* NSSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CEC1EE55FDFBB0DC1772 /* NSSetTests.m */; };
@@ -21,14 +21,14 @@
 
 /* Begin PBXFileReference section */
 		17B5C003F6CEE2FBC2D431ED /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
-		17B5C065029ED1C3FC0D43D3 /* propertyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = propertyTests.m; sourceTree = "<group>"; };
+		17B5C065029ED1C3FC0D43D3 /* PropertyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyTests.m; sourceTree = "<group>"; };
 		17B5C1093CCE9FAA46228C22 /* NSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayTests.h; sourceTree = "<group>"; };
 		17B5C334865E92027683A7ED /* NSDictionaryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryTests.h; sourceTree = "<group>"; };
 		17B5C43C9ECD00DF8CA2A806 /* NSSetTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSetTests.h; sourceTree = "<group>"; };
 		17B5C51FFB1A1B754C838937 /* objc-assessment-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-assessment-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C53C1ED8255F559EFBFB /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		17B5C5C37025766055D806E3 /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
-		17B5C95F968D525BC977823E /* propertyTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = propertyTests.h; sourceTree = "<group>"; };
+		17B5C95F968D525BC977823E /* PropertyTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyTests.h; sourceTree = "<group>"; };
 		17B5C9924C88DC5803C4D5EE /* NSDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTests.m; sourceTree = "<group>"; };
 		17B5CEC1EE55FDFBB0DC1772 /* NSSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetTests.m; sourceTree = "<group>"; };
 		73098246171EE0AF009C3C36 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 		17B5C9E76A458C3EF522E42C /* Property */ = {
 			isa = PBXGroup;
 			children = (
-				17B5C95F968D525BC977823E /* propertyTests.h */,
-				17B5C065029ED1C3FC0D43D3 /* propertyTests.m */,
+				17B5C95F968D525BC977823E /* PropertyTests.h */,
+				17B5C065029ED1C3FC0D43D3 /* PropertyTests.m */,
 			);
 			path = Property;
 			sourceTree = "<group>";
@@ -246,7 +246,7 @@
 				17B5C8D89C9D107E325C923B /* NSDictionaryTests.m in Sources */,
 				17B5CAA0604B6725F24E6764 /* NSSetTests.m in Sources */,
 				17B5C24F0DD039C7E6674DEF /* NSStringTests.m in Sources */,
-				17B5C412CD942E78D7A2601F /* propertyTests.m in Sources */,
+				17B5C412CD942E78D7A2601F /* PropertyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
