@@ -1,6 +1,6 @@
 //
 //  OCHamcrest - OCHamcrest.h
-//  Copyright 2012 hamcrest.org. See LICENSE.txt
+//  Copyright 2013 hamcrest.org. See LICENSE.txt
 //
 //  Created by: Jon Reid, http://qualitycoding.org/
 //  Docs: http://hamcrest.github.com/OCHamcrest/
@@ -27,6 +27,7 @@
 #import <OCHamcrestIOS/HCIsInstanceOf.h>
 #import <OCHamcrestIOS/HCIsNil.h>
 #import <OCHamcrestIOS/HCIsSame.h>
+#import <OCHamcrestIOS/HCIsTypeOf.h>
 
 /**
     @defgroup collection_matchers Collection Matchers

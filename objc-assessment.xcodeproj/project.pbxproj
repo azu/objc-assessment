@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		17B5C2D20D6DDA0F832F6244 /* propertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC6103EC970D4C4450E5 /* propertyTests.m */; };
 		17B5CDF567479578C3A46983 /* NSSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD60B112697528A62BD6 /* NSSetTests.m */; };
-		735458DA15A2058F000D6787 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735458D915A2058F000D6787 /* OCHamcrestIOS.framework */; };
+		73098247171EE0AF009C3C36 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73098246171EE0AF009C3C36 /* OCHamcrestIOS.framework */; };
 		9A06130554F628CA509CAD95 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD94 /* SenTestingKit.framework */; };
 		9A06130554F628CA509CAD96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD79 /* UIKit.framework */; };
 		9A06130554F628CA509CAD97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06130554F628CA509CAD7B /* Foundation.framework */; };
@@ -25,13 +25,13 @@
 		17B5CC6103EC970D4C4450E5 /* propertyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = propertyTests.m; sourceTree = "<group>"; };
 		17B5CC7AE95EE92E1C97AD9C /* NSSetTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSetTests.h; sourceTree = "<group>"; };
 		17B5CD60B112697528A62BD6 /* NSSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetTests.m; sourceTree = "<group>"; };
-		735458D915A2058F000D6787 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		73098246171EE0AF009C3C36 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		9A06130554F628CA509CAD79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A06130554F628CA509CAD7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9A06130554F628CA509CAD7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9A06130554F628CA509CAD8B /* objc-assessmentTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "objc-assessmentTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A06130554F628CA509CAD8B /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A06130554F628CA509CAD94 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9A06130554F628CA509CAD9C /* objc-assessmentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "objc-assessmentTests-Info.plist"; sourceTree = "<group>"; };
+		9A06130554F628CA509CAD9C /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		9A06130554F628CA509CAD9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A06130554F628CA509CADA3 /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		9A06130554F628CA509CADA4 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 				9A06130554F628CA509CAD95 /* SenTestingKit.framework in Frameworks */,
 				9A06130554F628CA509CAD96 /* UIKit.framework in Frameworks */,
 				9A06130554F628CA509CAD97 /* Foundation.framework in Frameworks */,
-				735458DA15A2058F000D6787 /* OCHamcrestIOS.framework in Frameworks */,
+				73098247171EE0AF009C3C36 /* OCHamcrestIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		9A06130554F628CA509CAD6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A06130554F628CA509CAD8B /* objc-assessmentTests.octest */,
+				9A06130554F628CA509CAD8B /* Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,7 +76,7 @@
 		9A06130554F628CA509CAD78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				735458D915A2058F000D6787 /* OCHamcrestIOS.framework */,
+				73098246171EE0AF009C3C36 /* OCHamcrestIOS.framework */,
 				9A06130554F628CA509CAD94 /* SenTestingKit.framework */,
 				9A06130554F628CA509CAD7D /* CoreGraphics.framework */,
 				9A06130554F628CA509CAD7B /* Foundation.framework */,
@@ -100,8 +100,7 @@
 				9A06130554F628CA509CADA3 /* NSStringTests.h */,
 				9A06130554F628CA509CAD9B /* Supporting Files */,
 			);
-			name = Tests;
-			path = "objc-assessmentTests";
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		9A06130554F628CA509CAD9B /* Supporting Files */ = {
@@ -109,7 +108,7 @@
 			children = (
 				17B5C51FFB1A1B754C838937 /* objc-assessment-Prefix.pch */,
 				9A06130554F628CA509CAD9E /* InfoPlist.strings */,
-				9A06130554F628CA509CAD9C /* objc-assessmentTests-Info.plist */,
+				9A06130554F628CA509CAD9C /* Tests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,22 +116,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A06130554F628CA509CAD8C /* objc-assessmentTests */ = {
+		9A06130554F628CA509CAD8C /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A06130554F628CA509CAD8D /* Build configuration list for PBXNativeTarget "objc-assessmentTests" */;
+			buildConfigurationList = 9A06130554F628CA509CAD8D /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				9A06130554F628CA509CAD90 /* Sources */,
 				9A06130554F628CA509CAD91 /* Frameworks */,
 				9A06130554F628CA509CAD92 /* Resources */,
+				73098248171EE192009C3C36 /* ShellScript */,
 				9A06130554F628CA509CAD93 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "objc-assessmentTests";
+			name = Tests;
 			productName = "objc-assessmentTests";
-			productReference = 9A06130554F628CA509CAD8B /* objc-assessmentTests.octest */;
+			productReference = 9A06130554F628CA509CAD8B /* Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A06130554F628CA509CAD8C /* objc-assessmentTests */,
+				9A06130554F628CA509CAD8C /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +169,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		73098248171EE192009C3C36 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO|FIXME|\\?\\?\\?:|\\!\\!\\!:\"\nfind ${SRCROOT} \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
 		9A06130554F628CA509CAD93 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,10 +278,10 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "objc-assessmentTests/objc-assessment-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests/objc-assessment-Prefix.pch";
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				INFOPLIST_FILE = "objc-assessmentTests/objc-assessmentTests-Info.plist";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -284,10 +297,10 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "objc-assessmentTests/objc-assessment-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests/objc-assessment-Prefix.pch";
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				INFOPLIST_FILE = "objc-assessmentTests/objc-assessmentTests-Info.plist";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -306,7 +319,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A06130554F628CA509CAD8D /* Build configuration list for PBXNativeTarget "objc-assessmentTests" */ = {
+		9A06130554F628CA509CAD8D /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A06130554F628CA509CAD8E /* Release */,
