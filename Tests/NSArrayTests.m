@@ -54,7 +54,7 @@
 
 // 配列を区切り文字で結合
 - (void)testArrayJoin {
-    NSArray *array = [NSArray arrayWithObjects:@"a", @"b", @"c", nil];
+    NSArray *array = @[@"a", @"b", @"c"];
     NSString *joinedArray /*TODO: ","を区切り文字で結合する*/;
     assertThat(joinedArray, equalTo(@"a,b,c"));
 }
@@ -63,18 +63,18 @@
 - (void)testArrayWithNSNumber {
     NSArray *array /*TODO: NSNumberで数値を配列に入れる*/;
 
-    NSNumber *objectAtFirst = [array objectAtIndex:0];// 配列の0番目の要素は
+    NSNumber *objectAtFirst = array[0];// 配列の0番目の要素は
     assertThat(objectAtFirst, instanceOf([NSNumber class]));// NSNumberオブジェクトで
     assertThatInteger([objectAtFirst integerValue], equalToInteger(10));// 10という数字を持つ
 }
 
 // 配列の数値を合計する
 - (void)testArraySum {
-    NSArray *array = [NSArray arrayWithObjects:
-                                  [NSNumber numberWithInteger:1],
-                                  [NSNumber numberWithInteger:2],
-                                  [NSNumber numberWithInteger:3],
-                                  nil];
+    NSArray *array = @[
+        @1,
+        @2,
+        @3
+    ];
     NSInteger total = 0;
     /*TODO: totalに配列の数値を合計する*/
     assertThatInteger(total, equalToInteger(6));
@@ -95,11 +95,11 @@ NSComparisonResult compareInteger(id value1, id value2, void *context) {
 }
 // 配列を数字昇順にソートする
 - (void)testArraySort {
-    NSArray *array = [NSArray arrayWithObjects:
-                                  [NSNumber numberWithInteger:2],
-                                  [NSNumber numberWithInteger:3],
-                                  [NSNumber numberWithInteger:1],
-                                  nil];
+    NSArray *array = @[
+        @2,
+        @3,
+        @1
+    ];
     /*TODO: ソート関数compareIntegerを使って配列をソートする*/
     assertThat(array, contains(equalToInteger(1), equalToInteger(2), equalToInteger(3), nil));
 }

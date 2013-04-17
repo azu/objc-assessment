@@ -76,7 +76,7 @@ static const char *getPropertyType(objc_property_t property) {
 
         const char *name = ivar_getName(var);
         const char *typeEncoding = ivar_getTypeEncoding(var);
-        [arr addObject:[NSString stringWithCString:name encoding:NSUTF8StringEncoding]];
+        [arr addObject:@(name)];
         // do what you wish with the name and type here
     }
     free(vars);
@@ -91,7 +91,7 @@ static const char *getPropertyType(objc_property_t property) {
         objc_property_t property = properties[i];
         const char *propName = property_getName(property);
         if (propName){
-            NSString *propertyName = [NSString stringWithCString:propName encoding:NSUTF8StringEncoding];
+            NSString *propertyName = @(propName);
             [arr addObject:propertyName];
         }
     }
@@ -109,9 +109,9 @@ static const char *getPropertyType(objc_property_t property) {
         const char *propName = property_getName(property);
         if (propName){
             const char *propType = getPropertyType(property);
-            NSString *propertyName = [NSString stringWithCString:propName encoding:NSUTF8StringEncoding];
-            NSString *propertyType = [NSString stringWithCString:propType encoding:NSUTF8StringEncoding];
-            [dic setObject:propertyType forKey:propertyName];
+            NSString *propertyName = @(propName);
+            NSString *propertyType = @(propType);
+            dic[propertyName] = propertyType;
         }
     }
     free(props);

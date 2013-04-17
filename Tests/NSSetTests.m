@@ -27,7 +27,7 @@
 
 // 配列からNSSetを作成
 - (void)testNSSetInitWithArray {
-    NSArray *array = [NSArray arrayWithObjects:@"foo", @"bar", nil];
+    NSArray *array = @[@"foo", @"bar"];
     NSSet *set /*TODO: 配列からNSSetを作成*/;
     assertThat(set, hasItems(@"foo", @"bar", nil));
 }
@@ -41,7 +41,7 @@
 
 // 重複とNSSet
 - (void)testNSSetDuplication {
-    NSArray *array = [NSArray arrayWithObjects:@"foo", @"foo", @"bar", nil];
+    NSArray *array = @[@"foo", @"foo", @"bar"];
     NSSet *set = [NSSet setWithArray:array];
     // NSArray -> NSSet とした時に set に入ってる中身と同じsetを作る
     NSSet *expectedSet = [NSSet setWithObjects:/*TODO: setと同じ要素を持つNSSetを作成*/ nil];
