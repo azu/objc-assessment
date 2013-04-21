@@ -23,7 +23,7 @@
 }
 
 - (void)testNSMapTableEmpty {
-    NSMapTable *mapTable /*TODO: 空のNSMapTableを作成*/;
+    NSMapTable *mapTable = [[NSMapTable alloc] init];
     assertThat(mapTable, notNilValue());// nilではなく
     if (mapTable != nil) {
         assertThat(mapTable, instanceOf([NSMapTable class]));//NSMapTableのインスタンス
@@ -34,7 +34,7 @@
 // NSDictionaryと同じようにkey=valueを追加する
 - (void)testNSMapTableSetObjectWithString {
     NSMapTable *mapTable = [NSMapTable weakToWeakObjectsMapTable];
-    /*TODO: @"key"=@"value"を持つ辞書を作成*/;
+    [mapTable setObject:@"value" forKey:@"key"];
     id value = [mapTable objectForKey:@"key"];
     assertThat(value, equalTo(@"value"));
 }
@@ -43,7 +43,7 @@
 - (void)testNSMapTableSetObjectWithObject {
     NSMapTable *mapTable = [NSMapTable weakToWeakObjectsMapTable];
     NSObject *objectAsKey = [[NSObject alloc] init];
-    /*TODO: objectAsKey=@"value"を持つ辞書を作成*/;
+    [mapTable setObject:@"value" forKey:objectAsKey];
     id value = [mapTable objectForKey:objectAsKey];
     assertThat(value, equalTo(@"value"));
     assertThatInteger([mapTable count], equalToInteger(1));
@@ -54,7 +54,7 @@
     NSMapTable *mapTable = [NSMapTable weakToWeakObjectsMapTable];
     NSDate *dateAsKey = [NSDate date];
     [mapTable setObject:@"value" forKey:dateAsKey];
-    /*TODO: objectAsKeyを辞書から削除する */;
+    [mapTable removeObjectForKey:dateAsKey];
     id value = [mapTable objectForKey:dateAsKey];
     assertThat(value, nilValue());
 }
@@ -65,7 +65,7 @@
         NSDate *dateAsKey = [NSDate dateWithTimeIntervalSinceNow:i];
         [mapTable setObject:dateAsKey forKey:[@(i) stringValue]];
     }
-    /*TODO: 辞書からすべてのkeyを削除する */;
+    [mapTable removeAllObjects];
     assertThatInteger([mapTable count], equalToInteger(0));
 }
 
@@ -76,8 +76,7 @@
     NSDictionary *expectDictionary = @{
         @"key" : @"value"
     };
-    ;
-    NSDictionary *resultDictionary /*TODO: mapTableをNSDictionaryとして返す */;
+    NSDictionary *resultDictionary = [mapTable dictionaryRepresentation];
     assertThat(resultDictionary, equalTo(expectDictionary));
 }
 @end
