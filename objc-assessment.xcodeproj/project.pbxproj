@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17B5C24F0DD039C7E6674DEF /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C003F6CEE2FBC2D431ED /* NSStringTests.m */; };
+		17B5C36067AFC44AEF3ABCB8 /* NSMapTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C449EE7F6486ADDFC2D5 /* NSMapTableTests.m */; };
 		17B5C412CD942E78D7A2601F /* PropertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C065029ED1C3FC0D43D3 /* PropertyTests.m */; };
 		17B5C8D89C9D107E325C923B /* NSDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9924C88DC5803C4D5EE /* NSDictionaryTests.m */; };
 		17B5CA0F79EEB67AA69F105E /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5C37025766055D806E3 /* NSArrayTests.m */; };
@@ -25,6 +26,7 @@
 		17B5C1093CCE9FAA46228C22 /* NSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayTests.h; sourceTree = "<group>"; };
 		17B5C334865E92027683A7ED /* NSDictionaryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryTests.h; sourceTree = "<group>"; };
 		17B5C43C9ECD00DF8CA2A806 /* NSSetTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSetTests.h; sourceTree = "<group>"; };
+		17B5C449EE7F6486ADDFC2D5 /* NSMapTableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMapTableTests.m; sourceTree = "<group>"; };
 		17B5C51FFB1A1B754C838937 /* objc-assessment-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-assessment-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C53C1ED8255F559EFBFB /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		17B5C5C37025766055D806E3 /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 			path = NSSet;
 			sourceTree = "<group>";
 		};
+		17B5CE8FABA298E067368EFD /* NSMapTable */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C449EE7F6486ADDFC2D5 /* NSMapTableTests.m */,
+			);
+			path = NSMapTable;
+			sourceTree = "<group>";
+		};
 		9A06130554F628CA509CAD6C = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 				17B5CC4D6A94FEF3F5A1411C /* NSSet */,
 				17B5C247FC2EFAD6134D0937 /* NSString */,
 				17B5C9E76A458C3EF522E42C /* Property */,
+				17B5CE8FABA298E067368EFD /* NSMapTable */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 				17B5CAA0604B6725F24E6764 /* NSSetTests.m in Sources */,
 				17B5C24F0DD039C7E6674DEF /* NSStringTests.m in Sources */,
 				17B5C412CD942E78D7A2601F /* PropertyTests.m in Sources */,
+				17B5C36067AFC44AEF3ABCB8 /* NSMapTableTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +289,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -304,7 +316,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
